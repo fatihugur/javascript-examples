@@ -37,9 +37,23 @@ do{
 }while(counter1 < 10);
 
 
-// FOR LOOP
+// FOR LOOP - MATH.RANDOM
 
 for(var counter2 = 0; counter2 <= 100; counter2 += counter2 +10){
-	console.log(counter2);
+	//console.log(counter2);
+	if(counter2 * counter2 %4 == 0){
+		var random = Math.random() * 10;
+		 //console.log(counter2);
+		 console.log(random);
+	}
 
+}
+
+
+
+
+var array = [ "Hello", "I am Fatih", "Welcome", "How are you?"];
+
+for(var counter3 = 0; counter3 < array.length; counter3++){
+	console.log(array[counter3]);
 }
