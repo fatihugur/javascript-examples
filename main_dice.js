@@ -3,12 +3,12 @@
 //console.log(Math.random(0,6));
 
 var guess1 = prompt("Dubblesteen guess 1",1);
-alert(guess1);
+//alert(guess1);
 var guess2 = prompt("Dubblesteen guess 2", 1);
 var integerGuess1 = parseInt(guess1); //integera çevirdik
 var integerGuess2 = parseInt(guess2);
 var totalInt = integerGuess1 + integerGuess2;
-console.log("Total your guess :" + totalInt);
+console.log("Total your guess : " + totalInt);
 //console.log(totalInt);
 //alert(totalInt);
 var random1 = Math.random();
@@ -29,9 +29,23 @@ if(random1 < 1){
 	console.log("Dice total :" + diceTotal);
 }
 if(diceTotal== totalInt){
-	console.log("Bravou you guess the number");
+	console.log("Bravoo you guess the number");
 } else{
 	console.log( "Difference two numbers : " + (diceTotal - totalInt).toString());
 }
-console.log(random1);
-console.log(random2);
+//console.log(random1);
+//console.log(random2);
+document.write("My guess : <br>");
+for (var counter1 = 0; counter1 < totalInt; counter1++){
+	document.write(" $ ");
+}
+
+document.write("<br> Result of dice total: <br>");
+var counter2 = 0;
+while(counter2 < diceTotal){
+	document.write(" * ");
+	counter2++;
+}
+
+
+
