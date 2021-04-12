@@ -84,6 +84,23 @@ for(element in array1){
 
 
 
+//TRY CATCH METHOD
+//ERROR HANDLING
+
+try{
+	var fatih = "Fatih";
+	//var 1 = 1; //Uncaught SyntaxError: Unexpected number
+	var n1 = 1 // no error
+	for(i < 12; i=10; i++){
+		console.log(i); // ReferenceError: i is not defined
+	}
+
+}catch(error){ 
+	document.write(error);
+}
+
+
+
 
 
 
