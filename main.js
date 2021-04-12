@@ -97,6 +97,7 @@ try{
 
 }catch(error){ 
 	document.write(error);
+	
 }
 
 
