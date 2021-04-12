@@ -50,10 +50,43 @@ for(var counter2 = 0; counter2 <= 100; counter2 += counter2 +10){
 }
 
 
-
+//ARRAY WITH FOR LOOP
 
 var array = [ "Hello", "I am Fatih", "Welcome", "How are you?"];
 
 for(var counter3 = 0; counter3 < array.length; counter3++){
 	console.log(array[counter3]);
 }
+
+console.log("ARRAY FOR IN CONCEPT");
+
+
+var arraynew = ["Fatih", "Yannick", "Riyan", "Dan", "Sibert"];
+
+for (element in arraynew){
+	console.log(arraynew[element]);
+
+}
+
+//same as for (element in arraynew) {}
+// for (var i =0; i < arraynew.length; i++){
+
+// }
+
+
+// ARRAY - JSON FOR IN CONCEPT
+
+var array1 = {"data": "key"};
+for(element in array1){
+	console.log(element); // data
+	console.log(array1[element]); //key
+}
+
+
+
+
+
+
+
+
+
