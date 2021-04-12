@@ -2,6 +2,15 @@
 //to dice  - dubblesteen
 //console.log(Math.random(0,6));
 
+var guess1 = prompt("Dubblesteen guess 1",1);
+alert(guess1);
+var guess2 = prompt("Dubblesteen guess 2", 1);
+var integerGuess1 = parseInt(guess1); //integera çevirdik
+var integerGuess2 = parseInt(guess2);
+var totalInt = integerGuess1 + integerGuess2;
+console.log("Total your guess :" + totalInt);
+//console.log(totalInt);
+//alert(totalInt);
 var random1 = Math.random();
 var random2  = Math.random();
 if(random1 < 1){
@@ -16,6 +25,13 @@ if(random1 < 1){
 	if(random2 > 6) {
 		random2 = random2 % 6;  // integer for random2
 	}
+	var diceTotal = random1 + random2;
+	console.log("Dice total :" + diceTotal);
+}
+if(diceTotal== totalInt){
+	console.log("Bravou you guess the number");
+} else{
+	console.log( "Difference two numbers : " + (diceTotal - totalInt).toString());
 }
 console.log(random1);
 console.log(random2);
