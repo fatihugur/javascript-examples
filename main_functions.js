@@ -74,4 +74,24 @@ for(var counter= 0; counter <100; counter++){
 }
 
 
+//Recursive functions
 
+var counter = 0;
+var stop = 20;
+
+function toDo1(stoppage){
+	if(counter >= stop+1){
+		return 0;
+	} else{
+		toDo2(counter++);
+	}
+	
+
+}
+
+function toDo2(counter){
+	console.log(counter + ". Loop");
+	toDo1(stop);
+}
+
+toDo1(stop);
