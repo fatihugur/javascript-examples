@@ -1,3 +1,5 @@
+
+//https://www.udemy.com/course/javascript-temelden-profesyonele-kurs-1/learn/lecture/15865910#overview
 //Function in Js
 
 function sum(x,y){
@@ -45,8 +47,24 @@ console.log("Function in Function");
   	console.log(addName(names[random],surnames[random1])); //addName function
   }
 
+console.log("Random name-surname");
 
+function randomNameSurname(){
 
+	var newnames = ["Fatih ", "Yavuz ", "Ali ", "Emir "]; 
+  	var newsurnames = ["Ugur", "Demir", "Yildiz", "Oz"]; 
+  	var random3, random4;
+  	for(var counter=0; counter <newnames.length; counter++){ 
+  	random3 = Math.floor(Math.random()*4);  // random
+  	random4 =  Math.floor(Math.random()*4); // random1
+  	console.log(addName(newnames[random3],newsurnames[random4]));
 
+}
+
+}
+randomNameSurname();
+randomNameSurname();
+randomNameSurname();
+randomNameSurname();
 
 
