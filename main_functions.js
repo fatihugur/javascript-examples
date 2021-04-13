@@ -47,6 +47,8 @@ console.log("Function in Function");
   	console.log(addName(names[random],surnames[random1])); //addName function
   }
 
+
+// RANDOMNAMESURNAME Function
 console.log("Random name-surname");
 
 function randomNameSurname(){
@@ -62,9 +64,14 @@ function randomNameSurname(){
 }
 
 }
-randomNameSurname();
-randomNameSurname();
-randomNameSurname();
-randomNameSurname();
+// randomNameSurname();
+// randomNameSurname();
+// randomNameSurname();
+// randomNameSurname();
+
+for(var counter= 0; counter <100; counter++){
+	randomNameSurname();
+}
+
 
 
