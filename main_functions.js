@@ -95,3 +95,70 @@ function toDo2(counter){
 }
 
 toDo1(stop);
+
+
+
+// ANONIM FUNCTIONS
+
+//normal
+function exportFunc(x,y){
+	return x;
+}
+
+//anonim-isimsiz
+// function (x,y){
+// 	return x;
+// }
+
+//call so... iets
+
+var function_name = function(x,y){ 
+return x;
+}
+
+var sum = function(a,b){
+	return a+b;
+}(4,6); //10
+console.log(sum); //10
+
+//setInterval
+// setInterval(function(){
+// 	document.write(" 1 SECOND OVER <br>");
+// }, 1000);
+
+// as variable  anonim function
+var sum1 =  function(m,n){
+	return m+n;
+}
+
+var sum2 = sum1;
+console.log(sum2(7,7)); //14
+
+
+
+//FUNCTIONS AS VARIABLE
+
+
+function return5(){
+	return 5;
+}
+
+function return6(){
+	return 6;
+}
+
+var sumint = return5() + return6(); //11
+ console.log( "Sum : " + sumint); // Sum : 11
+
+ function return_array(string1, string2){
+ 	return [string1,string2];
+ }
+
+var arrayName =return_array("Fatih", "Ugur");
+console.log(arrayName);  // ["Fatih", "Ugur"]
+console.log(arrayName[0]); // Fatih
+console.log(arrayName[1]); // Ugur
+
+
+
+
